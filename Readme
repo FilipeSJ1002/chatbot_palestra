@@ -1,0 +1,102 @@
+# 📢 Palestra: Introdução aos Chatbots
+
+## 🎯 Objetivo
+Apresentar os conceitos, funcionamento, aplicações e tendências sobre chatbots, destacando seu impacto em diversos setores e como começar a utilizá-los.
+
+---
+
+## 📌 1. O que é um Chatbot?
+- Programa que simula uma conversa com humanos por texto ou voz.
+- Pode funcionar com regras simples ou inteligência artificial (IA).
+- Primeiros exemplos: ELIZA, ALICE. Evolução até ChatGPT e Alexa.
+
+---
+
+## 🧠 2. Como Funcionam os Chatbots
+- **Por Regras**: Respostas programadas (ex: menus).
+- **Por IA (NLP)**: Compreendem linguagem natural, aprendem com dados.
+- Componentes:
+  - Intenções (intents)
+  - Entidades (informações-chave)
+  - Contexto (memória da conversa)
+
+---
+
+## ⚙️ 3. Tipos de Chatbots
+- **Simples**: Usam fluxos e regras.
+- **Avançados**: Usam machine learning e NLP.
+- **Voicebots**: Interagem por voz (ex: Google Assistant).
+
+---
+
+## 💼 4. Aplicações Práticas
+- Atendimento ao cliente (chat em sites, WhatsApp).
+- E-commerce (vendas, suporte).
+- RH (recrutamento, onboarding).
+- Educação (apoio a alunos).
+- Saúde (triagem, agendamentos).
+
+---
+
+## 💻 5. Ferramentas e Tecnologias
+- **Plataformas**:
+  - Dialogflow (Google)
+  - Microsoft Bot Framework
+  - Rasa (open source)
+  - ChatGPT API
+  - ManyChat (chatbots para redes sociais)
+- **Canais de integração**:
+  - WhatsApp, Messenger, Webchat, Telegram, etc.
+
+---
+
+## ✅ 6. Benefícios
+- Atendimento 24/7.
+- Redução de custos operacionais.
+- Aumento na satisfação do cliente.
+- Coleta de dados e automação de processos.
+
+---
+
+## ⚠️ 7. Desafios
+- Limitações na compreensão de linguagem complexa.
+- Frustração com respostas erradas.
+- Dependência de supervisão humana em casos críticos.
+- Cuidados com LGPD e dados sensíveis.
+
+---
+
+## 🔮 8. Tendências Futuras
+- Chatbots multimodais (voz, texto, imagem).
+- Uso de IA generativa (como ChatGPT).
+- Chatbots mais empáticos e personalizados.
+- Automatização mais inteligente em áreas como vendas e suporte.
+
+---
+
+## 🧪 9. Demonstração (Opcional)
+- Exibir chatbot em ação.
+- Mostrar construção rápida usando plataforma visual.
+
+---
+
+## 📝 10. Conclusão
+- Chatbots são uma ferramenta poderosa de automação e interação.
+- Usados corretamente, melhoram a experiência do cliente e otimizam recursos.
+- Comece experimentando com ferramentas gratuitas e exemplos simples.
+
+---
+
+## 🙋‍♂️ Dicas Finais
+- Comece com um objetivo claro.
+- Escolha a plataforma certa para o seu público.
+- Teste com usuários reais.
+- Combine automação com suporte humano.
+
+---
+
+## 📬 Contato
+Para dúvidas ou sugestões, entre em contato:  
+**[Seu Nome]**  
+[Email/LinkedIn/Website opcional]
+
