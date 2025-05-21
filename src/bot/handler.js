@@ -1,6 +1,7 @@
 const Event = require('../models/event');
 const { scheduleEvent, cancelScheduledEvent } = require('./scheduler');
 const { filtrarEventos } = require('./utils');
+const getWeather = require('../utils/weather');
 
 const EVENTS_PER_PAGE = 2;
 
@@ -20,7 +21,8 @@ function setupHandlers(bot, agendamentos) {
           [
             { text: '➕ Novo Evento', callback_data: 'menu_novo' },
             { text: '📅 Meus Eventos', callback_data: 'menu_eventos' }
-          ]
+          ],
+          [{ text: '🌦️ Previsão do Tempo', callback_data: 'menu_tempo' }]
         ]
       }
     });
@@ -61,9 +63,14 @@ function setupHandlers(bot, agendamentos) {
   bot.on('callback_query', async (query) => {
     const chatId = query.message.chat.id;
     const data = query.data;
+    
+    bot.answerCallbackQuery(query.id).catch(() => {});
+
+  if (data === 'menu_tempo') {
+    bot.sendMessage(chatId, 'Digite o comando:\n/tempo <nome da cidade>\nEx: /tempo Rio de Janeiro');
+  }
 
     // Navegar pelos menus
-      bot.answerCallbackQuery(query.id).catch(() => {});
 
     if (data === 'menu_novo') {
       bot.answerCallbackQuery(query.id);
@@ -156,6 +163,20 @@ function setupHandlers(bot, agendamentos) {
       return bot.sendMessage(chatId, `✅ Evento agendado para ${data.toLocaleString()}`);
     }
   });
+
+  // Comando /tempo <cidade>
+bot.onText(/\/tempo (.+)/, async (msg, match) => {
+  const chatId = msg.chat.id;
+  const cidade = match[1].trim();
+  try {
+    const getWeather = require('../utils/weather');
+    const previsao = await getWeather(cidade);
+    bot.sendMessage(chatId, previsao);
+  } catch (error) {
+    bot.sendMessage(chatId, '❌ Não foi possível obter o tempo. Verifique o nome da cidade.');
+  }
+});
+
 }
 
 module.exports = setupHandlers;
