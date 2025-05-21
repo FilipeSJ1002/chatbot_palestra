@@ -165,17 +165,17 @@ function setupHandlers(bot, agendamentos) {
   });
 
   // Comando /tempo <cidade>
-bot.onText(/\/tempo (.+)/, async (msg, match) => {
-  const chatId = msg.chat.id;
-  const cidade = match[1].trim();
-  try {
-    const getWeather = require('../utils/weather');
-    const previsao = await getWeather(cidade);
-    bot.sendMessage(chatId, previsao);
-  } catch (error) {
-    bot.sendMessage(chatId, '❌ Não foi possível obter o tempo. Verifique o nome da cidade.');
-  }
-});
+    bot.onText(/\/tempo (.+)/, async (msg, match) => {
+      const chatId = msg.chat.id;
+      const cidade = match[1].trim();
+      try {
+        const getWeather = require('../utils/weather');
+        const previsao = await getWeather(cidade);
+        bot.sendMessage(chatId, previsao);
+      } catch (error) {
+        bot.sendMessage(chatId, '❌ Não foi possível obter o tempo. Verifique o nome da cidade.');
+      }
+    });
 
 }
 
