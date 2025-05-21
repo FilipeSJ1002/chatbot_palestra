@@ -176,7 +176,6 @@ function setupHandlers(bot, agendamentos) {
         bot.sendMessage(chatId, '❌ Não foi possível obter o tempo. Verifique o nome da cidade.');
       }
     });
-
 }
 
 module.exports = setupHandlers;
