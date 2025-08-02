@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 
 async function connectToDatabase() {
-  const uri = process.env.MONGO_URI;
+  const uri = process.env.MONGODB_URL;
   if (!uri) {
     throw new Error('❌ MONGO_URI não está definida no .env');
   }
